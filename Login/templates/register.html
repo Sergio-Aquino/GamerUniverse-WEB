@@ -19,7 +19,9 @@
 <header>
     <nav>
         <div>
-            <a href="http://localhost:63342/GamerUniverse-WEB/Home/templates/index.html?_ijt=9uunj0a3jh4q1f743sgllnsuh2&_ij_reload=RELOAD_ON_SAVE"><img src="../images/logo.png"></a>
+            <a href="../../Home/templates/index.html">
+                <img src="../images/logo.png" alt="">
+            </a>
         </div>
     </nav>
 </header>
@@ -28,23 +30,23 @@
     <h1>CRIAR UMA CONTA</h1>
     <form>
 
-        <input type="text" placeholder="NOME" id="nome" name="nome" required>
+        <label for="nome"><input type="text" placeholder="NOME" id="nome" name="nome" required></label>
         <br><br>
-        <input type="text" id="cpf" name="cpf" placeholder="CPF" maxlength="11" required>
+        <label for="cpf"></label><input type="text" id="cpf" name="cpf" placeholder="CPF" maxlength="11" required>
         <br><br>
-        <input type="text" id="telefone" name="telefone" placeholder="TELEFONE" maxlength="14" required>
+        <label for="telefone"></label><input type="text" id="telefone" name="telefone" placeholder="TELEFONE" maxlength="14" required>
         <br><br>
-        <input type="text" id="email" name="email" placeholder="EMAIL" required>
+        <label for="email"></label><input type="text" id="email" name="email" placeholder="EMAIL" required>
         <br><br>
-        <input type="text" id="cep" name="cep" placeholder="CEP" maxlength="8" required>
+        <label for="cep"></label><input type="text" id="cep" name="cep" placeholder="CEP" maxlength="8" required>
         <br><br>
-        <input type="text" id="numero" name="numero" placeholder="NÚMERO" required>
-        <input type="text" id="complemento" name="complemento" placeholder="COMPLEMENTO">
+        <label for="numero"></label><input type="text" id="numero" name="numero" placeholder="NÚMERO" required>
+        <label for="complemento"></label><input type="text" id="complemento" name="complemento" placeholder="COMPLEMENTO">
         <br><br>
-        <input type="password" id="senha" placeholder="SENHA" required>
+        <label for="senha"></label><input type="password" id="senha" placeholder="SENHA" required>
         <br><br>
         <button type="submit" class="custom-button">
-            <img src="../images/seta-direita 1.png" alt="Ícone de Entrar">
+            <img src="/Login/images/seta-direita 1.png" alt="Ícone de Entrar">
         </button>
 
     </form>
@@ -52,6 +54,5 @@
     <p><a href="login.html">JÁ POSSUI UMA CONTA? </a></p>
 
 </div>
-
 </body>
 </html>
