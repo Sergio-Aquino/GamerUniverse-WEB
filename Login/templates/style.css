@@ -10,18 +10,18 @@ body {
     background-position: center; /* Centraliza a imagem de fundo */
 }
 
-
-nav {
-    position: absolute; /* Posiciona o nav em relação ao body */
-    top: 10px; /* Distância do topo do body */
-    left: 10px; /* Distância da esquerda do body */
-    background-color: #FF4655;
-    width: fit-content;
+nav  {
+    display: inline-block;
+    position: absolute;
+    top: 35px;
+    left: 100px;
+    padding: 13px;
+    background: rgba(255, 70, 85, 0.5);
     border-radius: 20px;
 }
 
 nav img {
-    margin-left: 0;
+    transform: scale(1.8);
     width: 100px;
     height: 100px;
 }
