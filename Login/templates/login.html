@@ -3,19 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>Login</title>
-    <style>
-        .custom-button {
-            background-color: #FF4655;
-            color: #000000;
-            padding: 10px 20px; /* Espaçamento interno do botão (topo/baixo e esquerda/direita) */
-            border: none;
-            border-radius: 27px;
-            cursor: pointer;
-        }
-
-    </style>
-
 </head>
 <body>
 <header>
@@ -24,23 +13,22 @@
     </nav>
 </header>
 
-<div>
-    <h1>INICIAR SESSÃO</h1>
-    <form>
-        <label for="email"></label><input type="text" placeholder="EMAIL" id="email" name="email" required>
-        <br><br>
-        <label for="senha"></label><input type="password" placeholder="SENHA" id="senha" name="senha" required>
-        <br><br>
-        <button type="submit" class="custom-button">
-            <img src="/Login/images/seta-direita 1.png" alt="Ícone de Entrar">
-        </button>
+<div class="fundo">
+    <div>
+        <h1>INICIAR SESSÃO</h1>
+        <form>
+            <label for="email"></label><input type="text" placeholder="EMAIL" id="email" name="email" required>
+            <br><br>
+            <label for="senha"></label><input type="password" placeholder="SENHA" id="senha" name="senha" required>
+            <br><br>
+            <button type="submit" class="custom-button">
+                <img src="/Login/images/seta-direita 1.png" alt="Ícone de Entrar">
+            </button>
+        </form>
 
-    </form>
-
-    <a href="recoverpassword.html">NÃO CONSEGUE FAZER LOGIN?</a>
-    <a href="register.html">CRIAR CONTA</a>
+        <a class="link" href="recoverpassword.html">NÃO CONSEGUE FAZER LOGIN?</a>
+        <a class="link" href="register.html">CRIAR CONTA</a>
+    </div>
 </div>
 </body>
 </html>
-
-
