@@ -1,25 +1,27 @@
-var clickedElement1 = false;
-var clickedElement2 = false;
+var filledEmail = false;
+var filledSenha = false;
 
-document.getElementById('email').onclick = function() {
-    clickedElement1 = true;
-    checkBothElementsClicked();
+document.getElementById('email').oninput = function() {
+    checkBothInputsFilled();
 };
 
-document.getElementById('senha').onclick = function() {
-    clickedElement2 = true;
-    checkBothElementsClicked();
+document.getElementById('senha').oninput = function() {
+    checkBothInputsFilled();
 };
 
-function checkBothElementsClicked() {
-    var button = document.querySelector(".custom-button");
+function checkBothInputsFilled() {
+    var emailInput = document.getElementById('email');
+    var senhaInput = document.getElementById('senha');
+    var button = document.getElementById('button');
 
-    if (clickedElement1 && clickedElement2) {
+    filledEmail = emailInput.value.trim() !== '';
+    filledSenha = senhaInput.value.trim() !== '';
+
+    if (filledEmail && filledSenha) {
         button.style.backgroundColor = '#FF4655';
-        button.style.color = '#000000';
-
+        button.disabled = false;
     } else {
         button.style.backgroundColor = 'white';
-        button.style.color = '#000000';
+        button.disabled = true;
     }
 }
