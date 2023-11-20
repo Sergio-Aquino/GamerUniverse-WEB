@@ -30,7 +30,7 @@ nav img {
     display: inline-block;
     padding: 20px 40px; /* Aumenta o preenchimento nas margens esquerda e direita */
     background: rgba(0, 0, 0, 0.6);
-    border-radius: 10px;
+    border-radius: 27px;
 }
 
 div {
@@ -47,7 +47,7 @@ input[type="text"], input[type="password"] {
     margin-bottom: 10px; /* Adiciona algum espaço abaixo dos campos de entrada */
     border: none;
     border-radius: 10px;
-    background: rgba(0, 0, 0, 0.5);
+    background: rgba(0, 0, 0, 1);
     color: white; /* Muda a cor do texto para branco */
     font-weight: bold;
     opacity: 0.5
