@@ -93,16 +93,7 @@ main {
     background-position: center;
 }
 
-.accessories-container {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    align-items: flex-end;
-    margin-top: 20px;
-    gap: 100px;
-}
-
-.fundo {
+.main-text {
     display: block;
     padding: 5px;
     background: rgba(0, 0, 0, 0.5);
@@ -110,4 +101,12 @@ main {
     margin-top: 40px;
     color: white;
     width: fit-content;
+}
+
+main div h2 {
+    margin-bottom: 10px;
+}
+
+main div p {
+    margin-bottom: 20px;
 }

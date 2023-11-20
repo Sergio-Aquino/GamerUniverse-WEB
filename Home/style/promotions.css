@@ -86,10 +86,11 @@ header h4 {
 }
 
 main {
+    height: 100vh; /* Adicione esta linha */
     background-image: url("../images/fundo.png");
     background-repeat: no-repeat;
-    background-size: 100% 100%; /* Faz a imagem de fundo cobrir todo o body */
-    background-position: center; /* Centraliza a imagem de fundo */
+    background-size: cover;
+    background-position: center;
 }
 
 .promotion-container {
