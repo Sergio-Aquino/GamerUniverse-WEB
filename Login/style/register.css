@@ -41,13 +41,23 @@ div h1 {
     color: white;
 }
 
+.form-group {
+    flex-direction: row;
+    display: flex;
+}
+
+#numero{
+    margin-right: 10px;
+}
+
+
 input[type="text"], input[type="password"] {
     width: 100%; /* Faz os campos de entrada ocuparem toda a largura da div */
     padding: 10px; /* Adiciona algum preenchimento aos campos de entrada */
     margin-bottom: 10px; /* Adiciona algum espaço abaixo dos campos de entrada */
     border: none;
     border-radius: 10px;
-    background: rgba(0, 0, 0, 0.5);
+    background: rgba(0, 0, 0, 1);
     color: white; /* Muda a cor do texto para branco */
     font-weight: bold;
     opacity: 0.5
