@@ -92,7 +92,7 @@ main {
     background-position: center; /* Centraliza a imagem de fundo */
 }
 
-.promotion-container {
+.clothes-container {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
