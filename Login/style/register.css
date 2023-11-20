@@ -77,7 +77,6 @@ input[type="text"]::placeholder, input[type="password"]::placeholder {
 }
 
 .custom-button {
-    background-color: #FF4655;
     color: #000000;
     padding: 10px 20px; /* Espaçamento interno do botão (topo/baixo e esquerda/direita) */
     border: none;
