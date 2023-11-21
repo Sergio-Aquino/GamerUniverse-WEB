@@ -21,7 +21,6 @@ function checkBothInputsFilled() {
         button.style.backgroundColor = '#FF4655';
         button.disabled = false;
     } else {
-        button.style.backgroundColor = 'white';
         button.disabled = true;
     }
 }
