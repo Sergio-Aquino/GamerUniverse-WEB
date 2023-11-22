@@ -86,28 +86,40 @@ header h4 {
 }
 
 main {
-    height: 100vh; /* Adicione esta linha */
+    height: 120vh; /* Adicione esta linha */
     background-color: black;
     background-image: url("../images/fundo.png");
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: center;
+    background-position: center 30%
 }
 
 .main-text {
     display: block;
-    padding: 5px;
-    background: rgba(0, 0, 0, 0.5);
+    padding: 30px ;
+    background: rgba(0, 0, 0, 0.6);
     border-radius: 20px;
     margin-top: 40px;
+    margin-right: 200px;
+    margin-left: 200px;
     color: white;
     width: fit-content;
 }
 
 main div h2 {
     margin-bottom: 10px;
+    font-size: larger;
 }
 
 main div p {
     margin-bottom: 20px;
+}
+
+.current-page {
+    font-weight: bold;
+}
+
+p{
+    padding-left: 40px;
+    font-size: large;
 }

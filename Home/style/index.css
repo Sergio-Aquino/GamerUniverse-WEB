@@ -182,3 +182,7 @@ main {
     text-decoration: none;
     color: white;
 }
+
+.current-page {
+    font-weight: bold;
+}
