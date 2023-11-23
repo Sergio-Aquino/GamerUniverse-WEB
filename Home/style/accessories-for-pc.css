@@ -1,0 +1,151 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
+
+html, body {
+    height: 100%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    font-family: 'Roboto Mono', monospace;
+}
+
+header, main {
+    flex-shrink: 0;
+}
+
+
+header h4 {
+    margin: 0;
+    padding: 8px;
+    top: 0;
+    width: 100%;
+    background-color: black;
+    color: white;
+    text-align: center;
+    word-wrap: break-word;
+}
+.nav-items{
+    display: flex;
+    margin-right: 40px;
+    justify-content: center;
+    text-decoration: none;
+    color: black;
+}
+
+.itens1, .itens2{
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    font-family: 'Roboto Mono', monospace;
+}
+
+
+.itens3 {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    align-content: center;
+    justify-content: flex-start;
+    padding: 0;
+    font-size: 12px;
+    font-family: 'Roboto Mono', monospace;
+}
+
+
+.itens1 a, .itens2 a{
+    text-decoration: none;
+    color: black;
+    margin: 0 20px;
+
+}
+
+.itens2 a {
+    margin: 0 2.1rem;
+    margin-bottom: 5px;
+}
+
+.itens2 img {
+    width: 30px;
+    height: 30px;
+}
+
+
+.itens-action {
+    display: flex;
+    flex-direction: row;
+
+    padding: 0;
+}
+
+.itens-direito {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0;
+}
+
+.nav-bar {
+    background-color: #FF4655;
+}
+
+
+main {
+    height: 100vh; /* Adicione esta linha */
+    background-color: black;
+    background-image: url("../images/fundo.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.accessories-container {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 20px;
+    margin-left: 18px;
+    gap: 100px;
+    text-align: center;
+}
+
+.accessories-container2 {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 20px;
+    margin-left: 18px;
+    gap: 100px;
+    text-align: center;
+}
+
+.accessories-container img {
+    width: 200px;
+    height: 200px;
+}
+
+.accessories-container2 img {
+    width: 200px;
+    height: 200px;
+}
+
+.fundo {
+    display: block;
+    padding: 5px;
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: 20px;
+    margin-top: 40px;
+    color: white;
+    width: fit-content;
+}
+
+.current-page {
+    font-weight: bold;
+}
