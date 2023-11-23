@@ -64,7 +64,7 @@ header, main {
 
 header h4 {
     margin: 0;
-    padding: 0;
+    padding: 10px;
     top: 0;
     width: 100%;
     background-color: black;
@@ -122,4 +122,9 @@ main div p {
 p{
     padding-left: 40px;
     font-size: large;
+}
+
+.account{
+        flex-direction: column;
+        display: flex;
 }
