@@ -1,60 +1,19 @@
-/* CSS Reset */
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed,
-figure, figcaption, footer, header, hgroup,
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-    margin: 0;
-    padding: 0;
-    border: 0;
-    font: inherit;
-    vertical-align: baseline;
-}
-/* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure,
-footer, header, hgroup, menu, nav, section {
-    display: block;
-}
-body {
-    line-height: 1;
-}
-ol, ul {
-    list-style: none;
-}
-blockquote, q {
-    quotes: none;
-}
-blockquote:before, blockquote:after,
-q:before, q:after {
-    content: none;
-}
-table {
-    border-collapse: collapse;
-    border-spacing: 0;
-}
-
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
+
 html, body {
     height: 100%;
 }
-/*-------------------------------------------------------------------------------------------------------------------*/
 
 body {
     display: flex;
     flex-direction: column;
+    font-family: 'Roboto Mono', monospace;
 }
 
 header, main {
@@ -64,7 +23,7 @@ header, main {
 
 header h4 {
     margin: 0;
-    padding: 0;
+    padding: 8px;
     top: 0;
     width: 100%;
     background-color: black;
@@ -72,21 +31,77 @@ header h4 {
     text-align: center;
     word-wrap: break-word;
 }
-
-.nav-items a {
-    display: inline-flex;
-    margin-right: 20px;
-    margin-bottom: 10px;
+.nav-items{
+    display: flex;
+    margin-right: 40px;
+    justify-content: center;
     text-decoration: none;
     color: black;
+}
+
+.itens1, .itens2{
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    font-family: 'Roboto Mono', monospace;
+}
+
+
+.itens3 {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    align-content: center;
+    justify-content: flex-start;
+    padding: 0;
+    font-size: 12px;
+    font-family: 'Roboto Mono', monospace;
+}
+
+
+.itens1 a, .itens2 a{
+    text-decoration: none;
+    color: black;
+    margin: 0 20px;
+
+}
+
+.itens2 a {
+    margin: 0 2.1rem;
+    margin-bottom: 5px;
+}
+
+.itens2 img {
+    width: 30px;
+    height: 30px;
+}
+
+
+.itens-action {
+    display: flex;
+    flex-direction: row;
+
+    padding: 0;
+}
+
+.itens-direito {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0;
 }
 
 .nav-bar {
     background-color: #FF4655;
 }
 
+
 main {
     height: 100vh; /* Adicione esta linha */
+    background-color: black;
     background-image: url("../images/fundo.png");
     background-repeat: no-repeat;
     background-size: cover;
@@ -95,11 +110,22 @@ main {
 
 .promotion-container {
     display: flex;
-    justify-content: center;
     flex-wrap: wrap;
-    align-items: flex-end;
     margin-top: 20px;
+    margin-left: 18px;
+    padding: 30px;
     gap: 100px;
+    text-align: center;
+}
+
+.promotion-container2 {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 20px;
+    margin-left: 18px;
+    padding: 30px;
+    gap: 100px;
+    text-align: center;
 }
 
 .fundo {
@@ -110,4 +136,8 @@ main {
     margin-top: 40px;
     color: white;
     width: fit-content;
+}
+
+.current-page {
+    font-weight: bold;
 }

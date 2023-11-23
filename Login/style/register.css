@@ -4,9 +4,7 @@ body {
     align-items: center;
     height: 100vh;
     margin: 0;
-
-    background-image: url("../images/fundo do login.png");
-
+    background-image: url("../../Login/images/fundo do login.png");
     background-repeat: no-repeat;
     background-size: 100% 100%; /* Faz a imagem de fundo cobrir todo o body */
     background-position: center; /* Centraliza a imagem de fundo */
@@ -42,6 +40,16 @@ div {
 div h1 {
     color: white;
 }
+
+.form-group {
+    flex-direction: row;
+    display: flex;
+}
+
+#numero{
+    margin-right: 10px;
+}
+
 
 input[type="text"], input[type="password"] {
     width: 100%; /* Faz os campos de entrada ocuparem toda a largura da div */

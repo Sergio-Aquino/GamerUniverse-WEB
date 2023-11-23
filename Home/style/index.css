@@ -1,61 +1,19 @@
-/* CSS Reset */
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed,
-figure, figcaption, footer, header, hgroup,
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-    margin: 0;
-    padding: 0;
-    border: 0;
-    font: inherit;
-    vertical-align: baseline;
-}
-/* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure,
-footer, header, hgroup, menu, nav, section {
-    display: block;
-}
-body {
-    line-height: 1;
-}
-ol, ul {
-    list-style: none;
-}
-blockquote, q {
-    quotes: none;
-}
-blockquote:before, blockquote:after,
-q:before, q:after {
-    content: none;
-}
-table {
-    border-collapse: collapse;
-    border-spacing: 0;
-}
-
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
+
 html, body {
     height: 100%;
 }
-/*-------------------------------------------------------------------------------------------------------------------*/
-
 
 body {
     display: flex;
     flex-direction: column;
+    font-family: 'Roboto Mono', monospace;
 }
 
 header, main {
@@ -65,7 +23,7 @@ header, main {
 
 header h4 {
     margin: 0;
-    padding: 0;
+    padding: 8px;
     top: 0;
     width: 100%;
     background-color: black;
@@ -73,13 +31,70 @@ header h4 {
     text-align: center;
     word-wrap: break-word;
 }
-
-.nav-items a {
-    display: inline-flex;
-    margin-right: 20px;
-    margin-bottom: 10px;
+.nav-items{
+    display: flex;
+    margin-right: 40px;
+    justify-content: center;
     text-decoration: none;
     color: black;
+}
+
+.itens1, .itens2{
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    font-family: 'Roboto Mono', monospace;
+    text-decoration: none;
+}
+
+
+.itens3 {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    align-content: center;
+    justify-content: flex-start;
+    padding: 0;
+    font-size: 12px;
+    font-family: 'Roboto Mono', monospace;
+}
+
+
+.itens1 a, .itens2 a{
+    font-family: 'Roboto Mono', monospace;
+    text-decoration: none;
+    color: black;
+    margin: 0 20px;
+
+}
+
+.itens2 a {
+    margin: 0 2.1rem;
+    margin-bottom: 5px;
+    text-decoration: none;
+}
+
+.itens2 img {
+    width: 30px;
+    height: 30px;
+}
+
+
+.itens-action {
+    display: flex;
+    flex-direction: row;
+
+    padding: 0;
+}
+
+.itens-direito {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0;
 }
 
 .nav-bar {
@@ -87,7 +102,8 @@ header h4 {
 }
 
 main {
-    height: 100vh; /* Adicione esta linha */
+    height: 100vh;
+    background-color: black;
     background-image: url("../images/fundo.png");
     background-repeat: no-repeat;
     background-size: cover;
@@ -101,7 +117,7 @@ main {
     border-radius: 20px;
     margin-top: 40px;
     color: white;
-    width: 80%; /* Adjust this value to increase or decrease the width */
+    width: 80%;
     margin-left: auto;
     margin-right: auto;
 }
@@ -117,7 +133,7 @@ main {
 .benefits {
     display: flex;
     justify-content: center;
-    align-items: flex-end;
+    align-items: center;
     margin-top: 20px;
     gap: 100px;
 }
@@ -136,7 +152,18 @@ main {
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
     gap: 10px;
+}
+
+.benefit-item p {
+    text-align: center;
+    font-size: 15px;
+}
+
+.benefit-item img {
+    width: 60px;
+    height: 50px;
 }
 
 .category {
@@ -150,7 +177,6 @@ main {
 .paragraph {
     padding: 5px;
     position: relative;
-    left: 40px;
 }
 
 .category-container {
@@ -169,7 +195,7 @@ main {
     border-radius: 20px;
     margin-top: 40px;
     color: white;
-    width: 12%;
+    width: 10%;
     word-wrap: break-word;
 }
 
@@ -180,4 +206,8 @@ main {
 .category-container a {
     text-decoration: none;
     color: white;
+}
+
+.current-page {
+    font-weight: bold;
 }

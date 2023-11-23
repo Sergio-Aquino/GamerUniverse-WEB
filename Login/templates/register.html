@@ -2,18 +2,10 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style/register.css">
     <title>Register</title>
-    <style>
-        .custom-button {
-            background-color: #FF4655;
-            color: #000000;
-            padding: 10px 20px;
-            border: none;
-            border-radius: 27px;
-            cursor: pointer;
-        }
 
-    </style>
 </head>
 <body>
 <header>
@@ -26,7 +18,7 @@
     </nav>
 </header>
 
-<div>
+<div class="fundo">
     <h1>CRIAR UMA CONTA</h1>
     <form>
 
@@ -40,19 +32,23 @@
         <br><br>
         <label for="cep"></label><input type="text" id="cep" name="cep" placeholder="CEP" maxlength="8" required>
         <br><br>
+        <div class="form-group">
         <label for="numero"></label><input type="text" id="numero" name="numero" placeholder="NÚMERO" required>
         <label for="complemento"></label><input type="text" id="complemento" name="complemento" placeholder="COMPLEMENTO">
-        <br><br>
+        </div>
+        <br>
         <label for="senha"></label><input type="password" id="senha" placeholder="SENHA" required>
         <br><br>
-        <button type="submit" class="custom-button">
-            <img src="../images/seta-direita 1.png" alt="Ícone de Entrar">
+        <button type="submit" class="custom-button" id="button" disabled>
+            <img src="../../Login/images/seta-direita 1.png" alt="Ícone de Entrar">
         </button>
 
     </form>
 
-    <p><a href="login.html">JÁ POSSUI UMA CONTA? </a></p>
+    <p><a class="link" href="login.html">JÁ POSSUI UMA CONTA? </a></p>
 
 </div>
+
+<script src="../../Login/function/register.js"></script>
 </body>
 </html>
